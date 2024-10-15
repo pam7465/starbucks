@@ -45,6 +45,95 @@
             padding-top:20px;
             padding-bottom:12px;
         }
+        .quick-nav{
+            display:flex;
+            flex-flow:row;
+            justify-content:flex-end;
+            align-items:center;
+            padding-top:10px;
+            padding-right:50px;
+            margin-bottom:12px;
+        }
+        .quick-nav>li{
+            border-right:1px solid #dddddd;
+            padding:0 20px;
+        }
+        .quick-nav>li:nth-child(5){
+            width:34px;
+            height:34px;
+            border:1px solid #aaaaaa;
+            border-radius:5px;
+            padding:6px 0 0 6px;
+            background-color:#ffffff;
+        }
+        .quick-nav>li>a{
+            font-size:13px;
+            color:#444444;
+        }
+        .quick-nav>li>a:hover{
+            text-decoration:underline;
+        }
+        .main-nav{
+            display:flex;
+            flex-flow:row;
+        }
+        .main-nav>li{
+            padding:4px 22px 32px 22px;
+        }
+        .main-nav>li:hover{
+            background-color:#333333;
+        }
+        .main-nav>li>a{
+            font-size:14px;
+        }
+        .main-nav>li:hover>a{
+            color:#669900;
+            text-decoration:underline;
+        }
+
+
+        .main-visual{
+            padding-top:119px;
+            position:relative;
+        }
+        .top-bg{
+            width:100%;
+        }
+        .top-txt{
+            position:absolute;
+            left:192px;
+            top:300px;
+        }
+        .top-drink01{
+            position:absolute;
+            left:1031px;
+            top:311px;
+        }
+        .top-drink02{
+            position:absolute;
+            left:800px;
+            top:200px;
+        }
+        .top-drink03{
+            position:absolute;
+            left:1330px;
+            top:200px;
+        }
+        .top-link{
+            position:absolute;
+            left:374px;
+            top:478px;
+            border:2px solid #113333;
+            border-radius:5px;
+            padding:6px 24px;
+            color:#113333;
+            transition:all 0.8s;
+        }
+        .top-link:hover{
+            background-color:#113333;
+            color:#ffffff;
+            text-decoration:underline;
+        }
     </style>
 </head>
 <body>
@@ -71,7 +160,14 @@
             </nav>
         </div>
     </header>
-    <section class="sec">섹션1</section>
+    <section class="sec main-visual">
+        <img class="top-bg" src="./images/october-top-bg.jpg" alt="배경이미지">
+        <img class="top-txt" src="./images/october-top-txt01.png" alt="meet the boddy's moment">
+        <img class="top-drink01" src="./images/october-top-drink01.png" alt="brink01">
+        <img class="top-drink02" src="./images/october-top-drink02.png" alt="brink02">
+        <img class="top-drink03" src="./images/october-top-drink03.png" alt="brink03">
+        <a class="top-link" href="#">자세히 보기</a>
+    </section>
     <section class="sec">섹션2</section>
     <section class="sec">섹션3</section>
     <section class="sec">섹션4</section>
