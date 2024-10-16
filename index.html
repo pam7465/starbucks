@@ -150,10 +150,11 @@
         .notice{
             display:flex;
             flex-flow:row;            
+            margin-top:-5px;
         }
         .notice-left{
             width:55%;
-            padding:10px 20px;
+            padding:16px 20px;
             background-color:#000000;
             display:flex;
             flex-flow:row;
@@ -161,7 +162,7 @@
             align-items:center;
         }
         .notice-left>h3{
-            font-size:16px;
+            font-size:18px;
             color:#ffffff;
             margin-right:20px;
         }
@@ -172,11 +173,11 @@
         .notice-left>ul>li{
             position:absolute;
             left:0;
-            top:-14px;
+            top:-13px;
             background-color:#000000;
         }
         .notice-left>ul>li>a{
-            font-size:13px;
+            font-size:14px;
             color:#ffffff;
         }
         .notice-left>ul>li>a:hover{
@@ -200,11 +201,64 @@
         }
         .notice-right{
             width:45%;
-            padding:10px 20px;
+            padding:10px 20px 10px 150px;
             background-color:#ffffff;
+            display:flex;
+            flex-flow:row;
+            align-items:center;
+        }
+        .notice-right>h3{
+            margin-right:60px;
+        }
+        .notice-right>h3>a{
+            font-size:18px;
+        }
+        .btn-chk{
+            width:36px;
+            height:36px;
+            border:1px solid #000000;
+            border-radius:18px;
+            padding-bottom:6px;
+            display:flex;
+            flex-flow:row;
+            justify-content:center;
+            align-items:center;
+        }
+        .btn-chk>a{
+            display:block;
+            width:16px;
+            height:16px;
+            border-right:2px solid #000000;
+            border-bottom:2px solid #000000;
+            transform:rotate(45deg);
         }
 
 
+        .rewards{
+            padding-top:30px;
+            padding-bottom:40px;
+            background-color:#1e3932;
+        }
+        .rewards>.container{
+            width:1100px;
+            margin:0 auto;
+            padding:0 40px;
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+            align-items:flex-start;
+        }
+        .rewards>.container>h2{
+            margin-right:40px;
+        }
+        .rewards>.container>h2>img{
+            width:180px;
+        }
+        .rewards-top{
+            margin-bottom:20px;
+            border-bottom:1px solid rgba(255,255,255,0.5);
+            padding-bottom:16px;
+        }
         @keyframes slow-show{
             0%{
                 opacity:0;
@@ -259,10 +313,22 @@
         </article>
         <article class="art notice-right">
             <h3><a href="#">스타벅스 프로모션</a></h3>
-            <div class="btn-chk"><a href="#">더보기</a></div>
+            <div class="btn-chk"><a href="#"></a></div>
         </article>
     </section>
-    <section class="sec">섹션3</section>
+    <section class="sec rewards">
+        <div class="container">
+            <h2><img src="./images/rewards-logo.png" alt="스타벅스 리워드"></h2>
+            <article class="art art-rewards">
+                <div class="rewards-top">
+                    리워드탑
+                </div>
+                <div class="rewards-bottom">
+                    리워드버텀
+                </div>
+            </article>
+        </div>
+    </section>
     <section class="sec">섹션4</section>
     <section class="sec">섹션5</section>
     <section class="sec">섹션6</section>
