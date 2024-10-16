@@ -254,10 +254,76 @@
         .rewards>.container>h2>img{
             width:180px;
         }
+        .art-rewards{
+            width:100%;
+        }
         .rewards-top{
             margin-bottom:20px;
             border-bottom:1px solid rgba(255,255,255,0.5);
             padding-bottom:16px;
+        }
+        .rewards-top>h3{
+            font-size:26px;
+            color:#ffffff;
+            font-weight:500;
+            margin-bottom:12px;
+        }
+        .rewards-top>h3>span{
+            font-weight:700;
+        }
+        .rewards-members{
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .rewards-members>p{
+            width:580px;
+            font-size:17px;
+            color:#ffffff;
+            line-height:1.4;
+        }
+        .rewards-members>p>span{
+            font-weight:700;
+        }
+        .btn-join,.btn-login{
+            width:100px;
+            height:38px;
+            border-radius:5px;
+            background-color:#00704a;
+            font-size:14px;
+            color:#ffffff;
+            text-align:center;
+            line-height:38px;
+        }
+        .btn-login{
+            border:2px solid #ffffff;
+            background-color:transparent;
+            line-height:34px;
+        }
+        .rewards-bottom{
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .rewards-bottom>p{
+            font-size:14px;
+            color:#ffffff;
+            line-height:1.4;
+        }
+        .rewards-bottom>p>span{
+            font-weight:700;
+        }
+        .gift-card{
+            width:210px;
+            height:38px;
+            border:2px solid #ffffff;
+            border-radius:5px;
+            font-size:14px;
+            color:#ffffff;
+            text-align:center;
+            line-height:34px;
         }
         @keyframes slow-show{
             0%{
@@ -322,7 +388,7 @@
             <article class="art art-rewards">
                 <div class="rewards-top">
                     <h3>스타벅스만의 특별한 혜택, <span>스타벅스 리워드</span></h3>
-                    <div>
+                    <div class="rewards-members">
                         <p>
                             <span>스타벅스 회원이세요?</span> 로그인을 통해 나만의 리워드를 확인해보세요.<br>
                             <span>스타벅스 회원이 아니세요?</span> 가입을 통해 리워드 혜택을 즐기세요.
