@@ -147,6 +147,62 @@
             text-decoration:underline;
         }
 
+        .notice{
+            display:flex;
+            flex-flow:row;            
+        }
+        .notice-left{
+            width:55%;
+            padding:10px 20px;
+            background-color:#000000;
+            display:flex;
+            flex-flow:row;
+            justify-content:flex-end;
+            align-items:center;
+        }
+        .notice-left>h3{
+            font-size:16px;
+            color:#ffffff;
+            margin-right:20px;
+        }
+        .notice-left>ul{
+            position:relative;
+            width:500px;
+        }
+        .notice-left>ul>li{
+            position:absolute;
+            left:0;
+            top:-14px;
+            background-color:#000000;
+        }
+        .notice-left>ul>li>a{
+            font-size:13px;
+            color:#ffffff;
+        }
+        .notice-left>ul>li>a:hover{
+            text-decoration:underline;
+        }
+        .btn-plus{
+            width:36px;
+            height:36px;
+            border:1px solid #ffffff;
+            border-radius:18px;
+            padding-bottom:4px;
+            display:flex;
+            flex-flow:row;
+            justify-content:center;
+            align-items:center;
+        }
+        .btn-plus>a{
+            font-weight:700;
+            font-size:32px;
+            color:#ffffff;
+        }
+        .notice-right{
+            width:45%;
+            padding:10px 20px;
+            background-color:#ffffff;
+        }
 
 
         @keyframes slow-show{
@@ -191,7 +247,21 @@
         <img class="top-drink03" src="./images/october-top-drink03.png" alt="brink03">
         <a class="top-link" href="#">자세히 보기</a>
     </section>
-    <section class="sec">섹션2</section>
+    <section class="sec notice">
+        <article class="art notice-left">
+            <h3>공지사항</h3>
+            <ul>
+                <li><a href="#">10월 이벤트 안내</a></li>
+                <li><a href="#">시스템 개선사업</a></li>
+                <li><a href="#">인공지능을 활용한 스마트오더</a></li>
+            </ul>
+            <div class="btn-plus"><a href="#">+</a></div>
+        </article>
+        <article class="art notice-right">
+            <h3><a href="#">스타벅스 프로모션</a></h3>
+            <div class="btn-chk"><a href="#">더보기</a></div>
+        </article>
+    </section>
     <section class="sec">섹션3</section>
     <section class="sec">섹션4</section>
     <section class="sec">섹션5</section>
