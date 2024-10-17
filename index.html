@@ -461,6 +461,58 @@
             top:0;
             /* opacity:0; */
         }
+        .magazine>.container>.art-magazine{
+            position:absolute;
+            left:700px;
+            top:130px;
+        }
+        .art-magazine>h3{
+            margin-bottom:30px;
+        }
+        .art-magazine>.btn-view{
+            margin-left:60px;
+        }
+
+        .store{
+            height:400px;
+            padding:80px 0;
+            background-image:url(./images/store-bg.jpg);
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:2000px;
+            position:relative;
+        }
+        .store>.container>h2{
+            position:absolute;
+            left:480px;
+            top:0;
+            /* opacity:0; */
+        }
+        .store02{
+            position:absolute;
+            left:200px;
+            top:150px;
+        }
+        .store>.container>.art-store{
+            position:absolute;
+            left:1000px;
+            top:100px;
+        }
+        .art-store>h3{
+            line-height:80px;
+        }
+        .art-store01{
+            /* transform:translateX(1000px); */
+            /* opacity:0; */
+        }
+        .art-store02{
+            /* transform:translateX(1000px); */
+            /* opacity:0; */
+        }
+        .art-store>.btn-view{
+            /* transform:translateX(1000px);  */
+            /* opacity:0; */
+        }
         @keyframes slow-show{
             0%{
                 opacity:0;
@@ -582,8 +634,21 @@
             </article>
         </div>
     </section>
-    <section class="sec">섹션8</section>
-    <section class="sec">섹션9</section>
+    <section class="sec store">
+        <div class="container">
+            <h2>
+                <img class="store01" src="./images/main-story01.png" alt="story01">
+                <img class="store02" src="./images/main-story02.png" alt="story02">
+            </h2>
+            <article class="art art-store">
+                <h3>
+                    <img class="art-store01" src="./images/main-story-txt01.png" alt="txt01"><br>
+                    <img class="art-store02" src="./images/main-story-txt02.png" alt="txt02">
+                </h3>
+                <a href="#" class="btn-view">매장찾기</a>
+            </article>
+        </div>
+    </section>
     <footer class="footer">푸터</footer>    
 </body>
 </html>
