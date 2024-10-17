@@ -445,6 +445,22 @@
             /* transform:translateX(-1000px); */
             /* opacity:0; */
         }
+
+        .magazine{
+            height:400px;
+            padding:80px 0;
+            background-image:url(./images/reserve-bg.png);
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:2000px;
+            position:relative;
+        }
+        .magazine>.container>h2{
+            position:absolute;
+            left:1100px;
+            top:0;
+            /* opacity:0; */
+        }
         @keyframes slow-show{
             0%{
                 opacity:0;
@@ -557,7 +573,15 @@
             </article>
         </div>
     </section>
-    <section class="sec">섹션7</section>
+    <section class="sec magazine">
+        <div class="container">
+            <h2><img src="./images/reserve-visual.png" alt="리저브 메거진"></h2>
+            <article class="art art-magazine">
+                <h3><img src="./images/reserve-text.png" alt="리저브 메거진"></h3>
+                <a href="#" class="btn-view">자세히 보기</a>
+            </article>
+        </div>
+    </section>
     <section class="sec">섹션8</section>
     <section class="sec">섹션9</section>
     <footer class="footer">푸터</footer>    
