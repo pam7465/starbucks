@@ -403,6 +403,48 @@
             background-color:#e8b679;
             color:#ffffff;
         }
+
+        .pick{
+            height:800px;
+            padding:80px 0;
+            background-image:url(./images/october-pick-bg.jpg);
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:2000px;
+            background-attachment:fixed;
+            position:relative;
+        }
+        .pick>.container>h2{
+            position:absolute;
+            left:800px;
+            top:100px;
+        }
+        .pick>.container>.art-pick{
+            position:absolute;
+            left:400px;
+            top:150px;
+        }
+        .art-pick>h3{
+            text-align:right;
+            line-height:100px;
+        }
+        .art-pick>.btn-view{
+            margin-left:246px;
+            border:2px solid #ffffff;
+            color:#ffffff;
+        }
+        .art-pick>.btn-view:hover{            
+            background-color:#ffffff;
+            color:#000000;
+        }
+        .pick01{
+            /* transform:translateX(-1000px); */
+            /* opacity:0; */
+        }
+        .pick02{
+            /* transform:translateX(-1000px); */
+            /* opacity:0; */
+        }
         @keyframes slow-show{
             0%{
                 opacity:0;
@@ -503,7 +545,18 @@
             </article>
         </div>
     </section>
-    <section class="sec">섹션6</section>
+    <section class="sec pick">
+        <div class="container">
+            <h2><img src="./images/october-pick-img.png" alt="pic"></h2>
+            <article class="art art-pick">
+                <h3>
+                    <img class="pick01" src="./images/october-pick-txt01.png" alt="pic01"><br>
+                    <img class="pick02" src="./images/october-pick-txt02.png" alt="pic02">
+                </h3>
+                <a href="#" class="btn-view">자세히 보기</a>
+            </article>
+        </div>
+    </section>
     <section class="sec">섹션7</section>
     <section class="sec">섹션8</section>
     <section class="sec">섹션9</section>
