@@ -483,7 +483,7 @@
             border:2px solid #ffffff;
             color:#ffffff;
             opacity:0;
-            transition:opacity 0.3s;
+            transition:opacity 0.8s;
         }
         .art-pick.active>.btn-view{
             opacity:1;
@@ -493,12 +493,14 @@
             color:#000000;
         }
         .pick01{
-            /* transform:translateX(-1000px); */
-            /* opacity:0; */
+            transform:translateX(-1000px);
+            opacity:0;
+            transition:all 1.8s;
         }
         .pick02{
-            /* transform:translateX(-1000px); */
-            /* opacity:0; */
+            transform:translateX(-1000px);
+            opacity:0;
+            transition:all 2.6s;
         }
 
         .magazine{
@@ -541,7 +543,8 @@
             position:absolute;
             left:480px;
             top:0;
-            /* opacity:0; */
+            opacity:0;
+            transition:opacity 2s;
         }
         .store02{
             position:absolute;
@@ -557,16 +560,19 @@
             line-height:80px;
         }
         .art-store01{
-            /* transform:translateX(1000px); */
-            /* opacity:0; */
+            transform:translateX(1000px);
+            opacity:0;
+            transition:all 1.8s;
         }
         .art-store02{
-            /* transform:translateX(1000px); */
-            /* opacity:0; */
+            transform:translateX(1000px);
+            opacity:0;
+            transition:all 1.8s 0.3s;
         }
         .art-store>.btn-view{
-            /* transform:translateX(1000px);  */
-            /* opacity:0; */
+            transform:translateX(300px); 
+            opacity:0;
+            transition:all 1.2s;
         }
 
         .footer{
@@ -1175,7 +1181,46 @@
                 document.querySelector('.art-bean').style.opacity = '0';
             }
 
-            
+            console.log(window.scrollY);
+
+            // pick 섹션에 적용되는 스크립트
+            if(window.scrollY>=1700){
+                // .pick01,.pick02, .art-pick>.btn-view 나타남
+                document.querySelector('.pick01').style.transform = 'translateX(0px)';
+                document.querySelector('.pick01').style.opacity = '1';
+                document.querySelector('.pick02').style.transform = 'translateX(0px)';
+                document.querySelector('.pick02').style.opacity = '1';
+                document.querySelector('.art-pick>.btn-view').style.opacity = '1';
+            }else{
+                // .pick01,.pick02, .art-pick>.btn-view 사라짐
+                document.querySelector('.pick01').style.transform = 'translateX(-1000px)';
+                document.querySelector('.pick01').style.opacity = '0';
+                document.querySelector('.pick02').style.transform = 'translateX(-1000px)';
+                document.querySelector('.pick02').style.opacity = '0';
+                document.querySelector('.art-pick>.btn-view').style.opacity = '0';
+            }
+
+
+            // store 섹션에 적용되는 스크립트
+            if(window.scrollY>=2650){
+                // .store>.container>h2, .art-store01, .art-store02, .art-store>.btn-view  나타남
+                document.querySelector('.store>.container>h2').style.opacity = '1';
+                document.querySelector('.art-store01').style.transform = 'translateX(0px)';
+                document.querySelector('.art-store01').style.opacity = '1';
+                document.querySelector('.art-store02').style.transform = 'translateX(0px)';
+                document.querySelector('.art-store02').style.opacity = '1';
+                document.querySelector('.art-store>.btn-view').style.transform = 'translateX(0px)';
+                document.querySelector('.art-store>.btn-view').style.opacity = '1';
+            }else{
+                // .store>.container>h2, .art-store01, .art-store02, .art-store>.btn-view 사라짐
+                document.querySelector('.store>.container>h2').style.opacity = '0';
+                document.querySelector('.art-store01').style.transform = 'translateX(1000px)';
+                document.querySelector('.art-store01').style.opacity = '0';
+                document.querySelector('.art-store02').style.transform = 'translateX(1000px)';
+                document.querySelector('.art-store02').style.opacity = '0';
+                document.querySelector('.art-store>.btn-view').style.transform = 'translateX(300px)';
+                document.querySelector('.art-store>.btn-view').style.opacity = '0';
+            }
 
         }
     </script>
