@@ -388,15 +388,17 @@
             align-items:flex-start;
         }
         .bean>.container>h2{
-            /* transform:translateX(-1000px); */
-            /* opacity:0; */
+            transform:translateX(-800px);
+            opacity:0;
+            transition:all 1.5s;
         }
         .art-bean{
             position:relative;
             left:-100px;
             top:60px;
-            /* transform:translateX(1000px); */
-            /* opacity:0; */
+            transform:translateX(1000px);
+            opacity:0;
+            transition:all 2.1s 0.2s;
         }
         .art-bean>h3{
             margin-bottom:30px;
@@ -1156,6 +1158,27 @@
         </article>
     </footer>    
 
+    <script>
+        window.onscroll = function(){
+            // bean 섹션에 적용되는 스크립트
+            if(window.scrollY>=600){
+                // 빈의 h2, .art-bean 나타남
+                document.querySelector('.bean>.container>h2').style.transform = 'translateX(0px)';
+                document.querySelector('.bean>.container>h2').style.opacity = '1';
+                document.querySelector('.art-bean').style.transform = 'translateX(0px)';
+                document.querySelector('.art-bean').style.opacity = '1';
+            }else{
+                // 빈의 h2, .art-bean 사라짐
+                document.querySelector('.bean>.container>h2').style.transform = 'translateX(-800px)';
+                document.querySelector('.bean>.container>h2').style.opacity = '0';
+                document.querySelector('.art-bean').style.transform = 'translateX(1000px)';
+                document.querySelector('.art-bean').style.opacity = '0';
+            }
+
+            
+
+        }
+    </script>
     
 </body>
 </html>
